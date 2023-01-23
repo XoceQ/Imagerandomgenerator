@@ -1,0 +1,112 @@
+
+@import url("https://fonts.googleapis.com/css?family=Cute+Font&display=swap");
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(-15deg, #000000, #5F50FF, #FF0000, #800080);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+    font-family: 'sans-serif', cursive;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: chartreuse;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    margin-top: 10px;
+
+}
+
+.imageContainer {
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #000000, -8px -8px 8px;
+
+}
+
+.images, .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#meme-img {
+    background-color: #ffffff;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#btn-meme {
+    margin: 10px;
+    padding: 2px 12px;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 600;
+    color: chartreuse;
+    background-color: #800080;
+}
+
+#btn-meme:hover {
+    background-color: #000000;
+    transform: scale(1.2);
+}
+
+#btn-meme:active{
+    transform: scale(.9);
+}
+
+#unplashImage {
+    max-height: 350px;
+    border: 20px solid black;
+    transform:  rotate(3deg);
+}
+
+@media only screen and (max-width: 590px){
+    .header {
+        font-size: 20px;
+    }
+
+    #meme-img{
+        background-color: #800080;
+        width: 200px;
+        height: 200px;
+    }
+}
