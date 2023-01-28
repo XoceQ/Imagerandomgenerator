@@ -2,5 +2,5 @@
 
 https://xoceq.github.io/Imagerandomgenerator/
 
-UNSPLASH API
+# UNSPLASH API
 https://unsplash.com/documentation
